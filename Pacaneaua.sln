@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pacaneaua", "Pacaneaua\Pacaneaua.csproj", "{CFB30B23-E468-47B0-9684-C8C27D2F09F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFB30B23-E468-47B0-9684-C8C27D2F09F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFB30B23-E468-47B0-9684-C8C27D2F09F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFB30B23-E468-47B0-9684-C8C27D2F09F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFB30B23-E468-47B0-9684-C8C27D2F09F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {264C214D-CCF8-45FB-8311-516EF7B08299}
+	EndGlobalSection
+EndGlobal

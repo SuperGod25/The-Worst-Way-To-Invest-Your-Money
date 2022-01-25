@@ -1,0 +1,10 @@
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\bin\Debug\Pacaneaua.exe.config
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\bin\Debug\Pacaneaua.exe
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\bin\Debug\Pacaneaua.pdb
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Debug\Pacaneaua.csprojAssemblyReference.cache
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Debug\Pacaneaua.Game.resources
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Debug\Pacaneaua.Properties.Resources.resources
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Debug\Pacaneaua.csproj.GenerateResource.cache
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Debug\Pacaneaua.csproj.CoreCompileInputs.cache
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Debug\Pacaneaua.exe
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Debug\Pacaneaua.pdb
