@@ -36,30 +36,35 @@ namespace Pacaneaua
             }
         }
 
-        private void btn_plus_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
-            if (bet > 0 && bet<1000)
+            Application.Restart();
+        }
+
+        private void btn_plus_Click_1(object sender, EventArgs e)
+        {
+            if (bet > 0 && bet < 1000)
             {
                 bet += 10;
-                
-                
+
+
 
                 if (bet >= 1000)
                     bet = 1000;
-                txtBox_bet.Text = bet.ToString();
+                lbl_Bet.Text = bet.ToString();
             }
-           
         }
 
-        private void btn_minus_Click(object sender, EventArgs e)
+        private void btn_minus_Click_1(object sender, EventArgs e)
         {
             if (bet > 10)
             {
                 bet -= 10;
-                txtBox_bet.Text = bet.ToString();
+                lbl_Bet.Text = bet.ToString();
             }
-            
         }
+
+       
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -77,7 +82,7 @@ namespace Pacaneaua
             if (credits >= bet)
             {
                 credits -= bet;
-                txtBox_credits.Text = credits.ToString();
+                lbl_Credits.Text = credits.ToString();
 
                 for (var i = 0; i < 10; i++)
                 {
@@ -114,7 +119,8 @@ namespace Pacaneaua
                     pictureBox3.BackColor = Color.PaleGreen;
                     totalWin = bet * 15;
                     credits += (int)totalWin;
-                    txtBox_credits.Text = credits.ToString();
+                    lbl_Credits.Text = credits.ToString();
+
                     label4.Text = "Last Win:" + totalWin.ToString();
                     lilWinSound.Play();
 
@@ -129,7 +135,7 @@ namespace Pacaneaua
                     pictureBox3.BackColor = Color.PaleGreen;
                     totalWin = bet * 3;
                     credits += (int)totalWin;
-                    txtBox_credits.Text = credits.ToString();
+                    lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     lilWinSound.Play();
                 }///CHERRIES
@@ -143,7 +149,7 @@ namespace Pacaneaua
                     pictureBox3.BackColor = Color.PaleGreen;
                     totalWin = (float)(bet * 4);
                     credits += (int)totalWin;
-                    txtBox_credits.Text = credits.ToString();
+                    lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     lilWinSound.Play();
                 }///BELLS
@@ -157,7 +163,7 @@ namespace Pacaneaua
                     pictureBox3.BackColor = Color.PaleGreen;
                     totalWin = (float)(bet * 100);
                     credits += (int)totalWin;
-                    txtBox_credits.Text = credits.ToString();
+                    lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     lilWinSound.Play();
                 }///COINS
@@ -171,7 +177,7 @@ namespace Pacaneaua
                     pictureBox3.BackColor = Color.PaleGreen;
                     totalWin = (float)(bet * 3.5);
                     credits += (int)totalWin;
-                    txtBox_credits.Text = credits.ToString();
+                    lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     lilWinSound.Play();
                 }///LEMONS
@@ -185,7 +191,7 @@ namespace Pacaneaua
                     pictureBox3.BackColor = Color.PaleGreen;
                     totalWin = (float)(bet * 2);
                     credits += (int)totalWin;
-                    txtBox_credits.Text = credits.ToString();
+                    lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     lilWinSound.Play();
                 }///APPLES
@@ -199,7 +205,7 @@ namespace Pacaneaua
                     pictureBox3.BackColor = Color.PaleGreen;
                     totalWin = (float)(bet * 5);
                     credits += (int)totalWin;
-                    txtBox_credits.Text = credits.ToString();
+                    lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     lilWinSound.Play();
                 }///PLUMS
@@ -222,7 +228,7 @@ namespace Pacaneaua
                     pictureBox4.BackColor = Color.PaleGreen;
                     totalWin = (float)(bet * 25);
                     credits += (int)totalWin;
-                    txtBox_credits.Text = credits.ToString();
+                    lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     lilWinSound.Play();
                 }///BARS
@@ -241,7 +247,7 @@ namespace Pacaneaua
                     pictureBox4.BackColor = Color.PaleGreen;
                     totalWin = (float)(bet * 6);
                     credits += (int)totalWin;
-                    txtBox_credits.Text = credits.ToString();
+                    lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     lilWinSound.Play();
                 }///CHERRIES
@@ -260,7 +266,7 @@ namespace Pacaneaua
                     pictureBox4.BackColor = Color.PaleGreen;
                     totalWin = (float)(bet * 9);
                     credits += (int)totalWin;
-                    txtBox_credits.Text = credits.ToString();
+                    lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     lilWinSound.Play();
                 }///BELLS
@@ -279,7 +285,7 @@ namespace Pacaneaua
                     pictureBox4.BackColor = Color.PaleGreen;
                     totalWin = (float)(bet * 250);
                     credits += (int)totalWin;
-                    txtBox_credits.Text = credits.ToString();
+                    lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     bigWinSound.Play();
                 }///COINS
@@ -298,7 +304,7 @@ namespace Pacaneaua
                     pictureBox4.BackColor = Color.PaleGreen;
                     totalWin = (float)(bet * 8);
                     credits += (int)totalWin;
-                    txtBox_credits.Text = credits.ToString();
+                    lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     lilWinSound.Play();
                 }///LEMONS
@@ -317,7 +323,7 @@ namespace Pacaneaua
                     pictureBox4.BackColor = Color.PaleGreen;
                     totalWin = (float)(bet *7.5);
                     credits += (int)totalWin;
-                    txtBox_credits.Text = credits.ToString();
+                    lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     lilWinSound.Play();
                 }///APPLES
@@ -337,7 +343,7 @@ namespace Pacaneaua
                     pictureBox4.BackColor = Color.PaleGreen;
                     totalWin = (float)(bet * 12);
                     credits += (int)totalWin;
-                    txtBox_credits.Text = credits.ToString();
+                    lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     lilWinSound.Play();
                 }///PLUMS
@@ -369,7 +375,7 @@ namespace Pacaneaua
                     pictureBox5.BackColor = Color.PaleGreen;
                     totalWin = (float)(bet * 40);
                     credits += (int)totalWin;
-                    txtBox_credits.Text = credits.ToString();
+                    lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     lilWinSound.Play();
                 }///BARS
@@ -400,7 +406,7 @@ namespace Pacaneaua
                     pictureBox5.BackColor = Color.PaleGreen;
                     totalWin = (float)(bet * 10);
                     credits += (int)totalWin;
-                    txtBox_credits.Text = credits.ToString();
+                    lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     lilWinSound.Play();
                 }///CHERRIES
@@ -431,7 +437,7 @@ namespace Pacaneaua
                     pictureBox5.BackColor = Color.PaleGreen;
                     totalWin = (float)(bet * 20);
                     credits += (int)totalWin;
-                    txtBox_credits.Text = credits.ToString();
+                    lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     lilWinSound.Play();
                 }///BELLS
@@ -462,7 +468,7 @@ namespace Pacaneaua
                     pictureBox5.BackColor = Color.PaleGreen;
                     totalWin = (float)(bet * 500);
                     credits += (int)totalWin;
-                    txtBox_credits.Text = credits.ToString();
+                    lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     bigWinSound.Play();
                 }///COINS
@@ -493,7 +499,7 @@ namespace Pacaneaua
                     pictureBox5.BackColor = Color.PaleGreen;
                     totalWin = (float)(bet * 15);
                     credits += (int)totalWin;
-                    txtBox_credits.Text = credits.ToString();
+                    lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     lilWinSound.Play();
                 }///LEMONS
@@ -523,7 +529,7 @@ namespace Pacaneaua
                     pictureBox5.BackColor = Color.PaleGreen;
                     totalWin = (float)(bet * 19.5);
                     credits += (int)totalWin;
-                    txtBox_credits.Text = credits.ToString();
+                    lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     lilWinSound.Play();
                 }///APPLES
@@ -554,7 +560,7 @@ namespace Pacaneaua
                     pictureBox5.BackColor = Color.PaleGreen;
                     totalWin = (float)(bet * 16.5);
                     credits += (int)totalWin;
-                    txtBox_credits.Text = credits.ToString();
+                    lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     lilWinSound.Play();
                 }///PLUMS
@@ -568,7 +574,7 @@ namespace Pacaneaua
                     pictureBox5.BackColor = Color.PaleGreen;
                     totalWin = (float)(bet * 750);
                     credits += (int)totalWin;
-                    txtBox_credits.Text = credits.ToString();
+                    lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     bigWinSound.Play();
                 }///5 TRIF
