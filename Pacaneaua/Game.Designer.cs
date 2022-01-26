@@ -127,9 +127,8 @@ namespace Pacaneaua
             this.label4.ForeColor = System.Drawing.Color.Lime;
             this.label4.Location = new System.Drawing.Point(402, 177);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(30, 31);
+            this.label4.Size = new System.Drawing.Size(0, 31);
             this.label4.TabIndex = 12;
-            this.label4.Text = "1";
             // 
             // label6
             // 
