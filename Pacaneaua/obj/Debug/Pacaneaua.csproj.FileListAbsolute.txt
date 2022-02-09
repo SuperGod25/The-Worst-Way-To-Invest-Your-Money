@@ -8,3 +8,10 @@ C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Debug\Pacaneaua.csproj.Gener
 C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Debug\Pacaneaua.csproj.CoreCompileInputs.cache
 C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Debug\Pacaneaua.exe
 C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Debug\Pacaneaua.pdb
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Debug\Pacaneaua.Main_Menu.resources
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\bin\Debug\dje\Pacaneaua.resources.dll
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Debug\Pacaneaua.Main_Menu.dje.resources
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Debug\dje\Pacaneaua.resources.dll
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\bin\Debug\en\Pacaneaua.resources.dll
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Debug\Pacaneaua.Main_Menu.en.resources
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Debug\en\Pacaneaua.resources.dll

@@ -103,6 +103,16 @@ namespace Pacaneaua.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap design_for_pacanea {
+            get {
+                object obj = ResourceManager.GetObject("design for pacanea", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lamaie {
             get {
                 object obj = ResourceManager.GetObject("lamaie", resourceCulture);
@@ -116,6 +126,16 @@ namespace Pacaneaua.Properties {
         internal static System.Drawing.Bitmap main_game_design {
             get {
                 object obj = ResourceManager.GetObject("main game design", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MAIN_MENU {
+            get {
+                object obj = ResourceManager.GetObject("MAIN MENU", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

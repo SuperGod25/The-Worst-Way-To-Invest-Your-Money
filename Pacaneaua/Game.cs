@@ -38,7 +38,15 @@ namespace Pacaneaua
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            Application.Restart();
+            
+        }
+
+        private void menu_btn_Click(object sender, EventArgs e)
+        {
+            Main_Menu meniu = new Main_Menu();
+            this.Hide();
+            meniu.Closed += (s, args) => this.Close();
+            meniu.Show();
         }
 
         private void btn_plus_Click_1(object sender, EventArgs e)

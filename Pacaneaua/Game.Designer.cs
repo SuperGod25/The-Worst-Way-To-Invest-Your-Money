@@ -43,6 +43,7 @@ namespace Pacaneaua
             this.button2 = new System.Windows.Forms.Button();
             this.btn_plus = new System.Windows.Forms.Button();
             this.btn_minus = new System.Windows.Forms.Button();
+            this.menu_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -214,16 +215,31 @@ namespace Pacaneaua
             this.btn_minus.UseVisualStyleBackColor = false;
             this.btn_minus.Click += new System.EventHandler(this.btn_minus_Click_1);
             // 
+            // menu_btn
+            // 
+            this.menu_btn.BackColor = System.Drawing.Color.MediumPurple;
+            this.menu_btn.FlatAppearance.BorderSize = 0;
+            this.menu_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.menu_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menu_btn.Location = new System.Drawing.Point(817, 22);
+            this.menu_btn.Name = "menu_btn";
+            this.menu_btn.Size = new System.Drawing.Size(137, 24);
+            this.menu_btn.TabIndex = 19;
+            this.menu_btn.Text = "Meniu";
+            this.menu_btn.UseVisualStyleBackColor = false;
+            this.menu_btn.Click += new System.EventHandler(this.menu_btn_Click);
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::Pacaneaua.Properties.Resources.main_game_design;
+            this.BackgroundImage = global::Pacaneaua.Properties.Resources.design_for_pacanea;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(976, 631);
             this.Controls.Add(this.btn_minus);
             this.Controls.Add(this.btn_plus);
+            this.Controls.Add(this.menu_btn);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.lbl_Bet);
             this.Controls.Add(this.lbl_Credits);
@@ -266,6 +282,7 @@ namespace Pacaneaua
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btn_plus;
         private System.Windows.Forms.Button btn_minus;
+        private System.Windows.Forms.Button menu_btn;
     }
 }
 

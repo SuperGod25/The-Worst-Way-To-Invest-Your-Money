@@ -16,7 +16,7 @@ namespace Pacaneaua
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Game());
+            Application.Run(new Main_Menu());
         }
     }
 }
