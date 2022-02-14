@@ -61,11 +61,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Castiguri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Castiguri.Designer.cs">
+      <DependentUpon>Castiguri.cs</DependentUpon>
+    </Compile>
     <Compile Include="Game.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Game.Designer.cs">
       <DependentUpon>Game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructiuni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructiuni.Designer.cs">
+      <DependentUpon>Instructiuni.cs</DependentUpon>
     </Compile>
     <Compile Include="Main Menu.cs">
       <SubType>Form</SubType>
@@ -75,8 +87,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Castiguri.resx">
+      <DependentUpon>Castiguri.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Game.resx">
       <DependentUpon>Game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructiuni.resx">
+      <DependentUpon>Instructiuni.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main Menu.dje.resx">
       <DependentUpon>Main Menu.cs</DependentUpon>
@@ -154,6 +172,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\design for pacanea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN MENU1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instruct page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Castiguri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Castiguri1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mute_Icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

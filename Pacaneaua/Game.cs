@@ -19,6 +19,7 @@ namespace Pacaneaua
         SoundPlayer rollSound = new SoundPlayer(@"C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\roll.wav");
         SoundPlayer lilWinSound = new SoundPlayer(@"C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\lilWin.wav");
         SoundPlayer bigWinSound = new SoundPlayer(@"C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\bigWin.wav");
+        bool ok = true;
 
         public static class IntUtil
         {
@@ -38,7 +39,7 @@ namespace Pacaneaua
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            
+            Application.Restart();
         }
 
         private void menu_btn_Click(object sender, EventArgs e)
@@ -47,6 +48,22 @@ namespace Pacaneaua
             this.Hide();
             meniu.Closed += (s, args) => this.Close();
             meniu.Show();
+        }
+
+        
+
+        private void mute_btn_Click(object sender, EventArgs e)
+        {
+            ok = false;
+            mute_btn.Visible = false;
+            play_btn.Visible = true;
+        }
+
+        private void play_btn_Click(object sender, EventArgs e)
+        {
+            ok = true;
+            play_btn.Visible = false;
+            mute_btn.Visible = true;
         }
 
         private void btn_plus_Click_1(object sender, EventArgs e)
@@ -78,6 +95,7 @@ namespace Pacaneaua
         {
             bigWinSound.Stop();
             lilWinSound.Stop();
+            if (ok == true)
             rollSound.Play();
 
 
@@ -130,7 +148,8 @@ namespace Pacaneaua
                     lbl_Credits.Text = credits.ToString();
 
                     label4.Text = "Last Win:" + totalWin.ToString();
-                    lilWinSound.Play();
+                    if(ok==true)
+                        lilWinSound.Play();
 
                 }///BARS
 
@@ -145,7 +164,8 @@ namespace Pacaneaua
                     credits += (int)totalWin;
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
-                    lilWinSound.Play();
+                    if (ok == true)
+                        lilWinSound.Play();
                 }///CHERRIES
 
                 if ((p1 == 3 && p2 == 3 && p3 == 3) || (p1 == 8 && p2 == 3 && p3 == 3) 
@@ -159,7 +179,8 @@ namespace Pacaneaua
                     credits += (int)totalWin;
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
-                    lilWinSound.Play();
+                    if (ok == true)
+                        lilWinSound.Play();
                 }///BELLS
 
                 if ((p1 == 4 && p2 == 4 && p3 == 4) || (p1 == 8 && p2 == 4 && p3 == 4) 
@@ -173,7 +194,8 @@ namespace Pacaneaua
                     credits += (int)totalWin;
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
-                    lilWinSound.Play();
+                    if (ok == true)
+                        lilWinSound.Play();
                 }///COINS
 
                 if ((p1 == 5 && p2 == 5 && p3 == 5) || (p1 == 8 && p2 == 5 && p3 == 5) 
@@ -187,7 +209,8 @@ namespace Pacaneaua
                     credits += (int)totalWin;
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
-                    lilWinSound.Play();
+                    if (ok == true)
+                        lilWinSound.Play();
                 }///LEMONS
 
                 if ((p1 == 6 && p2 == 6 && p3 == 6) || (p1 == 8 && p2 == 6 && p3 == 6)
@@ -201,7 +224,8 @@ namespace Pacaneaua
                     credits += (int)totalWin;
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
-                    lilWinSound.Play();
+                    if (ok == true)
+                        lilWinSound.Play();
                 }///APPLES
 
                 if ((p1 == 7 && p2 == 7 && p3 == 7) || (p1 == 8 && p2 == 7 && p3 == 7)
@@ -215,7 +239,8 @@ namespace Pacaneaua
                     credits += (int)totalWin;
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
-                    lilWinSound.Play();
+                    if (ok == true)
+                        lilWinSound.Play();
                 }///PLUMS
 
                 /////4 OF A KIND
@@ -238,7 +263,8 @@ namespace Pacaneaua
                     credits += (int)totalWin;
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
-                    lilWinSound.Play();
+                    if (ok == true)
+                        lilWinSound.Play();
                 }///BARS
 
                 if ((p1 == 2 && p2 == 2 && p3 == 2 && p4 == 2) || (p1 == 8 && p2 == 2 && p3 == 2 && p4 == 2)
@@ -257,7 +283,8 @@ namespace Pacaneaua
                     credits += (int)totalWin;
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
-                    lilWinSound.Play();
+                    if (ok == true)
+                        lilWinSound.Play();
                 }///CHERRIES
 
                 if ((p1 == 3 && p2 == 3 && p3 == 3 && p4 == 3) || (p1 == 8 && p2 == 3 && p3 == 3 && p4 == 3)
@@ -276,7 +303,8 @@ namespace Pacaneaua
                     credits += (int)totalWin;
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
-                    lilWinSound.Play();
+                    if (ok == true)
+                        lilWinSound.Play();
                 }///BELLS
 
                 if ((p1 == 4 && p2 == 4 && p3 == 4 && p4 == 4) || (p1 == 8 && p2 == 4 && p3 == 4 && p4 == 4)
@@ -295,7 +323,8 @@ namespace Pacaneaua
                     credits += (int)totalWin;
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
-                    bigWinSound.Play();
+                    if (ok == true)
+                        bigWinSound.Play();
                 }///COINS
 
                 if ((p1 == 5 && p2 == 5 && p3 == 5 && p4 == 5) || (p1 == 8 && p2 == 5 && p3 == 5 && p4 == 5)
@@ -314,7 +343,8 @@ namespace Pacaneaua
                     credits += (int)totalWin;
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
-                    lilWinSound.Play();
+                    if (ok == true)
+                        lilWinSound.Play();
                 }///LEMONS
 
                 if ((p1 == 6 && p2 == 6 && p3 == 6 && p4 == 6) || (p1 == 8 && p2 == 6 && p3 == 6 && p4 == 6)
@@ -333,7 +363,8 @@ namespace Pacaneaua
                     credits += (int)totalWin;
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
-                    lilWinSound.Play();
+                    if (ok == true)
+                        lilWinSound.Play();
                 }///APPLES
 
 
@@ -353,7 +384,8 @@ namespace Pacaneaua
                     credits += (int)totalWin;
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
-                    lilWinSound.Play();
+                    if (ok == true)
+                        lilWinSound.Play();
                 }///PLUMS
 
                  ///5 OF A KIND FULL
@@ -385,7 +417,8 @@ namespace Pacaneaua
                     credits += (int)totalWin;
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
-                    lilWinSound.Play();
+                    if (ok == true)
+                        lilWinSound.Play();
                 }///BARS
 
 
@@ -416,7 +449,8 @@ namespace Pacaneaua
                     credits += (int)totalWin;
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
-                    lilWinSound.Play();
+                    if (ok == true)
+                        lilWinSound.Play();
                 }///CHERRIES
 
 
@@ -447,7 +481,8 @@ namespace Pacaneaua
                     credits += (int)totalWin;
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
-                    lilWinSound.Play();
+                    if (ok == true)
+                        lilWinSound.Play();
                 }///BELLS
 
 
@@ -478,7 +513,8 @@ namespace Pacaneaua
                     credits += (int)totalWin;
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
-                    bigWinSound.Play();
+                    if (ok == true)
+                        bigWinSound.Play();
                 }///COINS
 
 
@@ -509,7 +545,8 @@ namespace Pacaneaua
                     credits += (int)totalWin;
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
-                    lilWinSound.Play();
+                    if (ok == true)
+                        lilWinSound.Play();
                 }///LEMONS
 
                 if ((p1 == 6 && p2 == 6 && p3 == 6 && p4 == 6 && p5 == 6)
@@ -539,7 +576,8 @@ namespace Pacaneaua
                     credits += (int)totalWin;
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
-                    lilWinSound.Play();
+                    if (ok == true)
+                        lilWinSound.Play();
                 }///APPLES
 
 
@@ -570,7 +608,8 @@ namespace Pacaneaua
                     credits += (int)totalWin;
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
-                    lilWinSound.Play();
+                    if (ok == true)
+                        lilWinSound.Play();
                 }///PLUMS
 
                 if(p1==8 && p2==8 && p3==8 && p4==8 && p5==8)
@@ -584,7 +623,8 @@ namespace Pacaneaua
                     credits += (int)totalWin;
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
-                    bigWinSound.Play();
+                    if (ok == true)
+                        bigWinSound.Play();
                 }///5 TRIF
 
             }

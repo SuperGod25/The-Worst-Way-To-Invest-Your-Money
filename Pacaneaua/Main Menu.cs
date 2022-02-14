@@ -36,5 +36,21 @@ namespace Pacaneaua
         {
             Application.Exit();
         }
+
+        private void instruct_btn_Click(object sender, EventArgs e)
+        {
+            Instructiuni instr = new Instructiuni();
+            this.Hide();
+            instr.Closed += (s, args) => this.Close();
+            instr.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Castiguri castiguri = new Castiguri();
+            this.Hide();
+            castiguri.Closed += (s, args) => this.Close();
+            castiguri.Show();
+        }
     }
 }

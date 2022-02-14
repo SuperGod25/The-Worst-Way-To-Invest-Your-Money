@@ -44,11 +44,15 @@ namespace Pacaneaua
             this.btn_plus = new System.Windows.Forms.Button();
             this.btn_minus = new System.Windows.Forms.Button();
             this.menu_btn = new System.Windows.Forms.Button();
+            this.play_btn = new System.Windows.Forms.PictureBox();
+            this.mute_btn = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.play_btn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mute_btn)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -229,6 +233,31 @@ namespace Pacaneaua
             this.menu_btn.UseVisualStyleBackColor = false;
             this.menu_btn.Click += new System.EventHandler(this.menu_btn_Click);
             // 
+            // play_btn
+            // 
+            this.play_btn.BackColor = System.Drawing.Color.Transparent;
+            this.play_btn.Image = global::Pacaneaua.Properties.Resources.playy;
+            this.play_btn.Location = new System.Drawing.Point(22, 61);
+            this.play_btn.Name = "play_btn";
+            this.play_btn.Size = new System.Drawing.Size(93, 67);
+            this.play_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.play_btn.TabIndex = 21;
+            this.play_btn.TabStop = false;
+            this.play_btn.Visible = false;
+            this.play_btn.Click += new System.EventHandler(this.play_btn_Click);
+            // 
+            // mute_btn
+            // 
+            this.mute_btn.BackColor = System.Drawing.Color.Transparent;
+            this.mute_btn.Image = global::Pacaneaua.Properties.Resources.Mute_Icon;
+            this.mute_btn.Location = new System.Drawing.Point(22, 61);
+            this.mute_btn.Name = "mute_btn";
+            this.mute_btn.Size = new System.Drawing.Size(93, 67);
+            this.mute_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.mute_btn.TabIndex = 22;
+            this.mute_btn.TabStop = false;
+            this.mute_btn.Click += new System.EventHandler(this.mute_btn_Click);
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -237,6 +266,8 @@ namespace Pacaneaua
             this.BackgroundImage = global::Pacaneaua.Properties.Resources.design_for_pacanea;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(976, 631);
+            this.Controls.Add(this.mute_btn);
+            this.Controls.Add(this.play_btn);
             this.Controls.Add(this.btn_minus);
             this.Controls.Add(this.btn_plus);
             this.Controls.Add(this.menu_btn);
@@ -262,6 +293,8 @@ namespace Pacaneaua
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.play_btn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mute_btn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -283,6 +316,8 @@ namespace Pacaneaua
         private System.Windows.Forms.Button btn_plus;
         private System.Windows.Forms.Button btn_minus;
         private System.Windows.Forms.Button menu_btn;
+        private System.Windows.Forms.PictureBox play_btn;
+        private System.Windows.Forms.PictureBox mute_btn;
     }
 }
 
