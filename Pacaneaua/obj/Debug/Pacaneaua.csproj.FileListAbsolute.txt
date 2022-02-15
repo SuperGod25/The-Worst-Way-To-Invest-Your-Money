@@ -17,3 +17,6 @@ C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Debug\Pacaneaua.Main_Menu.en
 C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Debug\en\Pacaneaua.resources.dll
 C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Debug\Pacaneaua.Instructiuni.resources
 C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Debug\Pacaneaua.Castiguri.resources
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\bin\Debug\bigWin.wav
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\bin\Debug\lilWIn.wav
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\bin\Debug\roll.wav

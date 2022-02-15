@@ -16,9 +16,11 @@ namespace Pacaneaua
         public static int bet = 10, credits = 1000;
         public static float totalWin = 0;
         public static int p1, p2, p3, p4, p5;
-        SoundPlayer rollSound = new SoundPlayer(@"C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\roll.wav");
-        SoundPlayer lilWinSound = new SoundPlayer(@"C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\lilWin.wav");
-        SoundPlayer bigWinSound = new SoundPlayer(@"C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\bigWin.wav");
+        
+        public SoundPlayer rollSound = new SoundPlayer();
+        public SoundPlayer lilWinSound = new SoundPlayer();
+        public SoundPlayer bigWinSound = new SoundPlayer();
+        
         bool ok = true;
 
         public static class IntUtil
@@ -93,6 +95,9 @@ namespace Pacaneaua
 
         private void button1_Click(object sender, EventArgs e)
         {
+            rollSound.SoundLocation = AppDomain.CurrentDomain.BaseDirectory + "\\roll.wav";
+            lilWinSound.SoundLocation = AppDomain.CurrentDomain.BaseDirectory + "\\lilWin.wav";
+            bigWinSound.SoundLocation = AppDomain.CurrentDomain.BaseDirectory + "\\bigWin.wav";
             bigWinSound.Stop();
             lilWinSound.Stop();
             if (ok == true)
@@ -264,7 +269,7 @@ namespace Pacaneaua
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     if (ok == true)
-                        lilWinSound.Play();
+                        bigWinSound.Play();
                 }///BARS
 
                 if ((p1 == 2 && p2 == 2 && p3 == 2 && p4 == 2) || (p1 == 8 && p2 == 2 && p3 == 2 && p4 == 2)
@@ -385,7 +390,7 @@ namespace Pacaneaua
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     if (ok == true)
-                        lilWinSound.Play();
+                        bigWinSound.Play();
                 }///PLUMS
 
                  ///5 OF A KIND FULL
@@ -418,7 +423,7 @@ namespace Pacaneaua
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     if (ok == true)
-                        lilWinSound.Play();
+                        bigWinSound.Play();
                 }///BARS
 
 
@@ -450,7 +455,7 @@ namespace Pacaneaua
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     if (ok == true)
-                        lilWinSound.Play();
+                        bigWinSound.Play();
                 }///CHERRIES
 
 
@@ -482,7 +487,7 @@ namespace Pacaneaua
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     if (ok == true)
-                        lilWinSound.Play();
+                        bigWinSound.Play();
                 }///BELLS
 
 
@@ -546,7 +551,7 @@ namespace Pacaneaua
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     if (ok == true)
-                        lilWinSound.Play();
+                        bigWinSound.Play();
                 }///LEMONS
 
                 if ((p1 == 6 && p2 == 6 && p3 == 6 && p4 == 6 && p5 == 6)
@@ -577,7 +582,7 @@ namespace Pacaneaua
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     if (ok == true)
-                        lilWinSound.Play();
+                        bigWinSound.Play();
                 }///APPLES
 
 
@@ -609,7 +614,7 @@ namespace Pacaneaua
                     lbl_Credits.Text = credits.ToString();
                     label4.Text = "Last Win:" + totalWin.ToString();
                     if (ok == true)
-                        lilWinSound.Play();
+                        bigWinSound.Play();
                 }///PLUMS
 
                 if(p1==8 && p2==8 && p3==8 && p4==8 && p5==8)
