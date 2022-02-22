@@ -288,6 +288,7 @@ namespace Pacaneaua
             this.Name = "Game";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The Worst Way To Invest Your Money";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Game_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

@@ -68,7 +68,14 @@ namespace Pacaneaua
             mute_btn.Visible = true;
         }
 
-        private void btn_plus_Click_1(object sender, EventArgs e)
+        private void Game_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Space))
+                button1_Click(sender, e);
+            
+        }
+
+        public void btn_plus_Click_1(object sender, EventArgs e)
         {
             if (bet > 0 && bet < 1000)
             {
@@ -82,7 +89,7 @@ namespace Pacaneaua
             }
         }
 
-        private void btn_minus_Click_1(object sender, EventArgs e)
+        public void btn_minus_Click_1(object sender, EventArgs e)
         {
             if (bet > 10)
             {

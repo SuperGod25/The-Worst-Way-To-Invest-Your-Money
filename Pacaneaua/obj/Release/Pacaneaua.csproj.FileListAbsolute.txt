@@ -19,3 +19,4 @@ C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Release\dje\Pacaneaua.resour
 C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Release\en\Pacaneaua.resources.dll
 C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Release\Pacaneaua.exe
 C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Release\Pacaneaua.pdb
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Release\Pacaneaua.csprojAssemblyReference.cache

@@ -1,0 +1,22 @@
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\bin\Release\bigWin.wav
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\bin\Release\lilWIn.wav
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\bin\Release\roll.wav
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\bin\Release\Pacaneaua.exe.config
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\bin\Release\Pacaneaua.exe
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\bin\Release\Pacaneaua.pdb
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\bin\Release\dje\Pacaneaua.resources.dll
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\bin\Release\en\Pacaneaua.resources.dll
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Release\Pacaneaua.Castiguri.resources
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Release\Pacaneaua.Game.resources
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Release\Pacaneaua.Instructiuni.resources
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Release\Pacaneaua.Main_Menu.resources
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Release\Pacaneaua.Properties.Resources.resources
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Release\Pacaneaua.Main_Menu.dje.resources
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Release\Pacaneaua.Main_Menu.en.resources
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Release\The Worst Way To Invest Your Money.csproj.GenerateResource.cache
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Release\The Worst Way To Invest Your Money.csproj.CoreCompileInputs.cache
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Release\dje\Pacaneaua.resources.dll
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Release\en\Pacaneaua.resources.dll
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Release\Pacaneaua.exe
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Release\Pacaneaua.pdb
+C:\Users\filip\source\repos\Pacaneaua\Pacaneaua\obj\Release\The Worst Way To Invest Your Money.csprojAssemblyReference.cache
